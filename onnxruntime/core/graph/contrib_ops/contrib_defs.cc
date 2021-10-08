@@ -2170,7 +2170,7 @@ Output is a reshaped sparse tensor with the same data.
             fail_shape_inference(
                 "'axes' input must contain only one entry for sparse inputs");
           }
-          if (!axes.empty() && axes[0] != 0 && axes[1] != 1) {
+          if (!axes.empty() && axes[0] != 0 && axes[0] != 1) {
             fail_shape_inference(
                 "'axes' only entry must be either 0 or 1 for sparse tensors");
           }
@@ -2288,7 +2288,7 @@ Output is a reshaped sparse tensor with the same data.
             fail_shape_inference(
                 "'axes' input must contain only one entry for sparse inputs");
           }
-          if (!axes.empty() && axes[0] != 0 && axes[1] != 1) {
+          if (!axes.empty() && axes[0] != 0 && axes[0] != 1) {
             fail_shape_inference(
                 "'axes' only entry must be either 0 or 1 for sparse tensors");
           }
